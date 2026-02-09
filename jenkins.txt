@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the Calculator Library...'
+                // Use the exact path you found, with double backslashes
+                bat '"C:\\Users\\admin\\AppData\\Local\\Python\\bin\\python.exe" -m py_compile calculator.py'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running Unit Tests...'
+                // Use the full path here too for your test script
+                bat '"C:\\Users\\admin\\AppData\\Local\\Python\\bin\\python.exe" test.py'
+            }
+        }
+    }
+}
