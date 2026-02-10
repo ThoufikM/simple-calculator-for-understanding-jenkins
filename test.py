@@ -1,7 +1,7 @@
 import unittest
 from calculator import add, subtract
 
-# Funtion for Testing the calculator functions 1
+# Funtion for Testing the calculator functions 2
 class TestCalculator(unittest.TestCase):
     def test_add(self):
         self.assertEqual(add(10, 5), 15)
