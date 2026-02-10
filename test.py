@@ -8,5 +8,9 @@ class TestCalculator(unittest.TestCase):
     def test_subtract(self):
         self.assertEqual(subtract(10, 5), 5)
 
+    def test_subtract(self):
+        self.assertEqual(subtract(15, 5), 10)
+    
+
 if __name__ == '__main__':
     unittest.main()
